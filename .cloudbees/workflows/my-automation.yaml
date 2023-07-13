@@ -1,4 +1,4 @@
-apiVersion: automation.cloudbees.io/v1alpha1
+apiVersion: automation.cloudbees.io/v1alpha2
 kind: workflow
 name: My automation
 
