@@ -1,17 +1,26 @@
 apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
-name: new automation
-
+name: My automation
 on:
   push:
     branches:
       - main
-
 jobs:
   build:
     steps:
       - name: Say hello
-        uses: docker://golang:1.20.3-alpine3.17
-        shell: sh
-        run: |
-          echo "hello world!"
+      - name: Say hello
+      - name: Say hello
+      - name: Say hello
+      - name: Say hello
+  test1:
+    steps:
+      - name: Say hello
+      - name: Say hello
+  test2:
+    steps:
+      - name: Say hello
+      - name: Say hello
+    needs:
+      - test1
+      - build
