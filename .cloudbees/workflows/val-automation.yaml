@@ -5,7 +5,7 @@ name: val automation
 on:
   push:
     branches:
-      - main
+      - val
 
 jobs:
   build:
