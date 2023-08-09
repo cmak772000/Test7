@@ -19,6 +19,7 @@ jobs:
       - name: Say hello
       - name: Say hello
       - name: Say hello
+      - name: Say hello
   test2:
     steps:
       - name: Say hello
