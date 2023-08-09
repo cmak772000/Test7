@@ -22,21 +22,21 @@ jobs:
       - name: Say hello
   test2:
     steps:
-      - name: Say hello3
+      - name: Say hello 1
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          echo "hello world3"
-      - name: Say hello1
+          echo "hello world"
+      - name: Say hello 2
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          echo "hello world1"
-      - name: Say hello2
+          echo "hello world"
+      - name: Say hello 3
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          echo "hello world2"
+          echo "hello world"
     needs:
       - test1
       - build
