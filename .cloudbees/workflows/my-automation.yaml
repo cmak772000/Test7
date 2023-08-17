@@ -1,11 +1,11 @@
-apiVersion: automation.cloudbees.io/v1alpha2
+apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 name: My automation
 
 on:
   push:
     branches:
-      - main
+      - '**'
 
 jobs:
   build:
@@ -14,4 +14,4 @@ jobs:
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          echo "hello world"
+          echo ${{ vars.string-property }} ${{ secrets.string-secret }}
