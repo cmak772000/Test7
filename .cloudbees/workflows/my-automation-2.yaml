@@ -14,6 +14,6 @@ jobs:
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          echo "hello world test1"
+          echo "hello world test2"
     outputs:
       key1: value1
