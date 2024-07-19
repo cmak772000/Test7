@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       p1: 
+        type: string
 jobs:
   build:
     steps:
