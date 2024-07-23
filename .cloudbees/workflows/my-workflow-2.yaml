@@ -9,10 +9,6 @@ on:
         default: hello world
         required: true
         description: a string
-      b1:
-        type: boolean
-        default: true
-        description: a boolean
       n1:
         type: number
         default: 12
