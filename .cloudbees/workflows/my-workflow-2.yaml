@@ -21,6 +21,10 @@ on:
           - c
         default: a
         description: a choice
+      b1:
+        type: boolean
+        default: true
+        description: a boolean
 jobs:
   build:
     steps:
