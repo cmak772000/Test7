@@ -7,7 +7,6 @@ on:
       s1:
         type: string
         default: hello world
-        required: true
         description: a string
       n1:
         type: number
