@@ -12,7 +12,6 @@ on:
         type: number
         default: 12
         description: a number
-        required: true
       c1:
         type: choice
         options:
@@ -21,10 +20,13 @@ on:
           - c
         default: a
         description: a choice
+        required: true
       b1:
         type: boolean
         default: true
         description: a boolean
+        required: true
+
 jobs:
   build:
     steps:
