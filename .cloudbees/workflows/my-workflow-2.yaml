@@ -8,10 +8,12 @@ on:
         type: string
         default: hello world
         description: a string
+        required: true
       n1:
         type: number
         default: 12
         description: a number
+        required: true
       c1:
         type: choice
         options:
