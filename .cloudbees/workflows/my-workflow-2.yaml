@@ -6,7 +6,6 @@ on:
     inputs:
       s1:
         type: string
-        default: hello world
         description: a string
       n1:
         type: number
