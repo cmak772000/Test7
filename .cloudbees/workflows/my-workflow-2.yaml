@@ -20,7 +20,6 @@ on:
           - c
         default: a
         description: a choice
-        required: true
       b1:
         type: boolean
         default: true
