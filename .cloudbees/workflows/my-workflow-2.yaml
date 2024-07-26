@@ -6,13 +6,13 @@ on:
     inputs:
       s1:
         type: string
-        description: a string
         default: hello world
+        description: a string
       n1:
         type: number
         default: 12
-        description: a number
         required: true
+        description: a number
       c1:
         type: choice
         options:
@@ -25,7 +25,18 @@ on:
         type: boolean
         default: true
         description: a boolean
-
+      s2:
+        type: string
+      s3:
+        type: string
+      s4:
+        type: string
+      s5:
+        type: string
+      s6:
+        type: string
+      s7:
+        type: string
 jobs:
   build:
     steps:
