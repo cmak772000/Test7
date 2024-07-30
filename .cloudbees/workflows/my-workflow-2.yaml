@@ -25,18 +25,6 @@ on:
         type: boolean
         default: true
         description: a boolean
-      s2:
-        type: string
-      s3:
-        type: string
-      s4:
-        type: string
-      s5:
-        type: string
-      s6:
-        type: string
-      s7:
-        type: string
 jobs:
   build:
     steps:
