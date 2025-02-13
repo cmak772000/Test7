@@ -34,3 +34,14 @@ jobs:
         shell: sh
         run: |
           echo "hello world"
+    needs:
+      - app
+  app:
+    timeout-minutes: 4320
+    delegates: cloudbees-io/manual-approval/custom-job.yml@v1
+    with:
+      approvers: 645a5a64-e80d-11ea-a794-42010a83ae1a
+      disallowLaunchByUser: false
+      instructions: ""
+      approvalInputs: |
+        {}
